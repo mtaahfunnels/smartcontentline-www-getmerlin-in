@@ -3,75 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Opt-in Page</title>
+<title>Opt-in Landing Page</title>
 <style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
-
-.container {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-}
-
-h1 {
-  text-align: center;
-  color: #333;
-}
-
-form {
-  margin-top: 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-button {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .left-side {
+    text-align: left;
+  }
+  
+  .right-side {
+    text-align: center;
+  }
+  
+  .form-box {
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #673AB7;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
 </style>
 </head>
 <body>
-
 <div class="container">
-  <h1>Unlock the Power of AI with Our Tool</h1>
-  <p>Experience seamless integration with ChatGPT and simplify web content summarization.</p>
-  
-  <form action="https://acumbamail.com/newform/subscribe/QyJXQIH27Z8NMNe6qJ9TBXSHob0KTayL/54855" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    
-    <button type="submit">Try the Shortcut Now</button>
-  </form>
+  <div class="left-side">
+    <h1>Unlock Smarter Browsing with Our AI Assistant</h1>
+    <p>Enhance your browsing experience by integrating our AI browser assistant with ChatGPT. Get personalized recommendations and insights tailored to your interests.</p>
+    <p>Summarize lengthy web content quickly and efficiently. Our tool helps you extract key information without having to read through entire articles.</p>
+  </div>
+  <div class="right-side">
+    <div class="form-box">
+      <form action="https://acumbamail.com/newform/subscribe/QyJXQIH27Z8NMNe6qJ9TBXSHob0KTayL/54855" method="POST">
+        <label for="email">Work Email Address</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <button type="submit">Unlock Smarter Browsing with AI Assistant</button>
+      </form>
+      <p>🔒 100% Secure – Privacy Guaranteed</p>
+    </div>
+  </div>
 </div>
-
 </body>
 </html>
